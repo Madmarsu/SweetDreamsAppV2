@@ -25,6 +25,34 @@ class AboutVC: UIViewController {
         return view
     }()
     
+    lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .center
+        label.textColor = UIColor.white.withAlphaComponent(1)
+        label.font = UIFont(name: "SavoyeLetPlain", size: 30)
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.5
+        label.layer.cornerRadius = 2
+        label.clipsToBounds = true
+        label.text = "Developed by:"
+        return label
+    }()
+    
+    lazy var developerLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .center
+        label.textColor = UIColor.white.withAlphaComponent(1)
+        label.font = UIFont(name: "SavoyeLetPlain", size: 30)
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.5
+        label.layer.cornerRadius = 2
+        label.clipsToBounds = true
+        label.text = "Uladzislau Daratsiuk"
+        return label
+    }()
+    
     fileprivate func setupNavBar(){
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named:"back"), style: .plain, target: self, action: #selector(handleBack))
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -47,12 +75,26 @@ class AboutVC: UIViewController {
         glassView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         glassView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         glassView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        
+        titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 80).isActive = true
+        titleLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
+        titleLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
+        titleLabel.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        
+        developerLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        developerLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 10).isActive = true
+        developerLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
+        developerLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
+        developerLabel.heightAnchor.constraint(equalToConstant: 35).isActive = true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(backgroundImageView)
         view.addSubview(glassView)
+        view.addSubview(titleLabel)
+        view.addSubview(developerLabel)
         setupNavBar()
         setupView()
         // Do any additional setup after loading the view.

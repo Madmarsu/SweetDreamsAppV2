@@ -32,6 +32,12 @@ extension MainVC {
         menuShowing = !menuShowing
     }
     
+    @objc public func handleShare(){
+        let activityVC = UIActivityViewController(activityItems: ["Take a look on this amazing App. called Sweet Dreams"], applicationActivities: nil)
+        activityVC.popoverPresentationController?.sourceView = self.view
+        self.present(activityVC, animated: true, completion: nil)
+    }
+    
     @objc public func handleBackground(melodie: Melodie){
         self.backgroundImageView.alpha = 0.3
         self.descriptionLabel.alpha = 0.3
@@ -57,6 +63,7 @@ extension MainVC {
         let item9 = Melodie(name: "City", icon: "city", background: "background7", melodie: "city", desc: "Amazing sound of New York City in the Morning")
         let item10 = Melodie(name: "Cleaner", icon: "cleaner", background: "background6", melodie: "cleaner", desc: "Sound to relax Baby To Go To Sleep Soothing Vacuum Cleaner")
         let item11 = Melodie(name: "Dryer", icon: "dryer", background: "background6", melodie: "dryer", desc: "Hair Dryer White Noise for your Baby")
+        let item12 = Melodie(name: "Whales", icon: "whales", background: "background6", melodie: "whales", desc: "Whale Sound deep Underwater with Ocean Sound")
         
         array.append(item1)
         array.append(item2)
@@ -69,6 +76,7 @@ extension MainVC {
         array.append(item9)
         array.append(item10)
         array.append(item11)
+        array.append(item12)
         
         return array
     }

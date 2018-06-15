@@ -13,6 +13,7 @@
 		C01BFDF620D3E3A500A282D6 /* TutorialHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01BFDF520D3E3A500A282D6 /* TutorialHandlers.swift */; };
 		C01BFDF820D3E4B000A282D6 /* BabyHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01BFDF720D3E4B000A282D6 /* BabyHandlers.swift */; };
 		C01BFDFA20D3E4C000A282D6 /* AboutHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01BFDF920D3E4C000A282D6 /* AboutHandlers.swift */; };
+		C01BFDFC20D3F40000A282D6 /* whales.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C01BFDFB20D3F40000A282D6 /* whales.mp3 */; };
 		C0C694F020D2594800FED852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C694EF20D2594800FED852 /* AppDelegate.swift */; };
 		C0C694F520D2594800FED852 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C694F320D2594800FED852 /* Main.storyboard */; };
 		C0C694F820D2594800FED852 /* Sweet_Dreams_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0C694F620D2594800FED852 /* Sweet_Dreams_App.xcdatamodeld */; };
@@ -67,6 +68,7 @@
 		C01BFDF520D3E3A500A282D6 /* TutorialHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialHandlers.swift; sourceTree = "<group>"; };
 		C01BFDF720D3E4B000A282D6 /* BabyHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyHandlers.swift; sourceTree = "<group>"; };
 		C01BFDF920D3E4C000A282D6 /* AboutHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutHandlers.swift; sourceTree = "<group>"; };
+		C01BFDFB20D3F40000A282D6 /* whales.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whales.mp3; sourceTree = "<group>"; };
 		C0C694EC20D2594800FED852 /* Sweet Dreams App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sweet Dreams App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C694EF20D2594800FED852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0C694F420D2594800FED852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -200,8 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				C0C6952920D2620700FED852 /* MenuHandlers.swift */,
-				C01BFDF520D3E3A500A282D6 /* TutorialHandlers.swift */,
 				C0C6952B20D2636B00FED852 /* MainHandler.swift */,
+				C01BFDF520D3E3A500A282D6 /* TutorialHandlers.swift */,
 				C01BFDF720D3E4B000A282D6 /* BabyHandlers.swift */,
 				C01BFDF920D3E4C000A282D6 /* AboutHandlers.swift */,
 			);
@@ -250,6 +252,7 @@
 				C0C6953A20D2899200FED852 /* train.mp3 */,
 				C0C6954120D2899B00FED852 /* winter.mp3 */,
 				C0E6949E20D2AB7B00B7E0BE /* desert.mp3 */,
+				C01BFDFB20D3F40000A282D6 /* whales.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				C0C6954920D2899B00FED852 /* city.mp3 in Resources */,
 				C0C6954A20D2899B00FED852 /* forest.mp3 in Resources */,
 				C0C6954620D2899B00FED852 /* start.mp3 in Resources */,
+				C01BFDFC20D3F40000A282D6 /* whales.mp3 in Resources */,
 				C0C6954720D2899B00FED852 /* sea.mp3 in Resources */,
 				C0C6954220D2899B00FED852 /* cleaner.mp3 in Resources */,
 				C0C6954320D2899B00FED852 /* dryer.mp3 in Resources */,
