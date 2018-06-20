@@ -77,7 +77,7 @@ class AboutVC: UIViewController {
         glassView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         
         titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 80).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 200).isActive = true
         titleLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
         titleLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
         titleLabel.heightAnchor.constraint(equalToConstant: 35).isActive = true
