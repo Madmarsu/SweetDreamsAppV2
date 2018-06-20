@@ -91,7 +91,7 @@ extension MainVC {
     
     @objc public func playTrack(trackName: String){
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: trackName, ofType: "mp3")!))
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: trackName, ofType: "m4a")!))
                 audioPlayer.prepareToPlay()
                 let session = AVAudioSession.sharedInstance()
                 try! session.setCategory(AVAudioSessionCategoryPlayAndRecord, with:AVAudioSessionCategoryOptions.defaultToSpeaker)
@@ -165,7 +165,7 @@ extension MainVC {
     
     @objc public func firstTrack(trackName: String){
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: trackName, ofType: "mp3")!))
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: trackName, ofType: "m4a")!))
             audioPlayer.prepareToPlay()
             let session = AVAudioSession.sharedInstance()
             try! session.setCategory(AVAudioSessionCategoryPlayAndRecord, with:AVAudioSessionCategoryOptions.defaultToSpeaker)
