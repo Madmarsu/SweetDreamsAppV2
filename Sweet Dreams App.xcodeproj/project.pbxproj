@@ -17,6 +17,8 @@
 		C025BC4820DA3429004BF51A /* BabyCollectionExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C025BC4720DA3429004BF51A /* BabyCollectionExt.swift */; };
 		C025BC4B20DA4532004BF51A /* fan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C025BC4920DA4531004BF51A /* fan.mp3 */; };
 		C025BC4C20DA4532004BF51A /* plain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C025BC4A20DA4531004BF51A /* plain.mp3 */; };
+		C025BC4F20DA6D8D004BF51A /* AlertHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C025BC4E20DA6D8D004BF51A /* AlertHandler.swift */; };
+		C025BC5120DA6ED8004BF51A /* EmailExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C025BC5020DA6ED8004BF51A /* EmailExtension.swift */; };
 		C0C694F020D2594800FED852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C694EF20D2594800FED852 /* AppDelegate.swift */; };
 		C0C694F520D2594800FED852 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C694F320D2594800FED852 /* Main.storyboard */; };
 		C0C694F820D2594800FED852 /* Sweet_Dreams_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0C694F620D2594800FED852 /* Sweet_Dreams_App.xcdatamodeld */; };
@@ -75,6 +77,8 @@
 		C025BC4720DA3429004BF51A /* BabyCollectionExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyCollectionExt.swift; sourceTree = "<group>"; };
 		C025BC4920DA4531004BF51A /* fan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fan.mp3; sourceTree = "<group>"; };
 		C025BC4A20DA4531004BF51A /* plain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = plain.mp3; sourceTree = "<group>"; };
+		C025BC4E20DA6D8D004BF51A /* AlertHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHandler.swift; sourceTree = "<group>"; };
+		C025BC5020DA6ED8004BF51A /* EmailExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailExtension.swift; sourceTree = "<group>"; };
 		C0C694EC20D2594800FED852 /* Sweet Dreams App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sweet Dreams App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C694EF20D2594800FED852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0C694F420D2594800FED852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,6 +140,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C025BC4D20DA6D69004BF51A /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				C0C6952E20D265D500FED852 /* MainCollectionExt.swift */,
+				C025BC4720DA3429004BF51A /* BabyCollectionExt.swift */,
+				C0C6953320D2666600FED852 /* Cell */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
 		C0C694E320D2594800FED852 = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +221,7 @@
 		C0C6952D20D263A100FED852 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
+				C025BC4E20DA6D8D004BF51A /* AlertHandler.swift */,
 				C0C6952920D2620700FED852 /* MenuHandlers.swift */,
 				C0C6952B20D2636B00FED852 /* MainHandler.swift */,
 				C01BFDF520D3E3A500A282D6 /* TutorialHandlers.swift */,
@@ -219,9 +234,8 @@
 		C0C6953020D2662000FED852 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				C0C6952E20D265D500FED852 /* MainCollectionExt.swift */,
-				C025BC4720DA3429004BF51A /* BabyCollectionExt.swift */,
-				C0C6953320D2666600FED852 /* Cell */,
+				C025BC4D20DA6D69004BF51A /* Collections */,
+				C025BC5020DA6ED8004BF51A /* EmailExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -425,6 +439,7 @@
 				C0C6952720D259F900FED852 /* AboutVC.swift in Sources */,
 				C0C694F820D2594800FED852 /* Sweet_Dreams_App.xcdatamodeld in Sources */,
 				C01BFDF620D3E3A500A282D6 /* TutorialHandlers.swift in Sources */,
+				C025BC5120DA6ED8004BF51A /* EmailExtension.swift in Sources */,
 				C0C6952F20D265D500FED852 /* MainCollectionExt.swift in Sources */,
 				C01BFDFA20D3E4C000A282D6 /* AboutHandlers.swift in Sources */,
 				C01BFDF420D3D13500A282D6 /* BabyVC.swift in Sources */,
@@ -433,6 +448,7 @@
 				C025BC4820DA3429004BF51A /* BabyCollectionExt.swift in Sources */,
 				C01BFDF820D3E4B000A282D6 /* BabyHandlers.swift in Sources */,
 				C0C6952120D259A900FED852 /* MenuVC.swift in Sources */,
+				C025BC4F20DA6D8D004BF51A /* AlertHandler.swift in Sources */,
 				C0C6952C20D2636B00FED852 /* MainHandler.swift in Sources */,
 				C0C6953520D2668800FED852 /* MelodieModel.swift in Sources */,
 			);

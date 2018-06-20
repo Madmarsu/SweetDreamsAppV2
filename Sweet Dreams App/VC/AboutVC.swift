@@ -53,6 +53,57 @@ class AboutVC: UIViewController {
         return label
     }()
     
+    lazy var emailButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setImage(UIImage(named: "email"), for: .normal)
+        button.clipsToBounds = true
+        button.contentMode = .scaleAspectFit
+        button.addTarget(self, action: #selector(handleEmail), for: .touchUpInside)
+        return button
+    }()
+    
+    lazy var facebookButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setImage(UIImage(named: "facebook"), for: .normal)
+        button.clipsToBounds = true
+        button.contentMode = .scaleAspectFit
+        button.addTarget(self, action: #selector(handleFacebook), for: .touchUpInside)
+        return button
+    }()
+    
+    lazy var twitterButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setImage(UIImage(named: "twitter"), for: .normal)
+        button.clipsToBounds = true
+        button.contentMode = .scaleAspectFit
+        button.addTarget(self, action: #selector(handleTwitter), for: .touchUpInside)
+        return button
+    }()
+    
+    lazy var youtubeButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setImage(UIImage(named: "youtube"), for: .normal)
+        button.clipsToBounds = true
+        button.contentMode = .scaleAspectFit
+        button.addTarget(self, action: #selector(handleYoutube), for: .touchUpInside)
+        return button
+    }()
+    
+    lazy var rateButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setImage(UIImage(named: "rate"), for: .normal)
+        button.clipsToBounds = true
+        button.contentMode = .scaleAspectFit
+        button.addTarget(self, action: #selector(handleRate), for: .touchUpInside)
+        return button
+    }()
+    
+    
     fileprivate func setupNavBar(){
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named:"back"), style: .plain, target: self, action: #selector(handleBack))
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -77,7 +128,7 @@ class AboutVC: UIViewController {
         glassView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         
         titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 200).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 150).isActive = true
         titleLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
         titleLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
         titleLabel.heightAnchor.constraint(equalToConstant: 35).isActive = true
@@ -87,6 +138,33 @@ class AboutVC: UIViewController {
         developerLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
         developerLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
         developerLabel.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        
+        emailButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        emailButton.topAnchor.constraint(equalTo: developerLabel.bottomAnchor, constant: 150).isActive = true
+        emailButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        emailButton.widthAnchor.constraint(equalToConstant: 60).isActive = true
+        
+        rateButton.centerXAnchor.constraint(equalTo: emailButton.centerXAnchor).isActive = true
+        rateButton.bottomAnchor.constraint(equalTo: emailButton.topAnchor, constant: -30).isActive = true
+        rateButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        rateButton.widthAnchor.constraint(equalToConstant: 60).isActive = true
+        
+        twitterButton.centerYAnchor.constraint(equalTo: emailButton.centerYAnchor).isActive = true
+        twitterButton.leftAnchor.constraint(equalTo: emailButton.rightAnchor, constant: 30).isActive = true
+        twitterButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        twitterButton.widthAnchor.constraint(equalToConstant: 60).isActive = true
+        
+        facebookButton.centerYAnchor.constraint(equalTo: emailButton.centerYAnchor).isActive = true
+        facebookButton.rightAnchor.constraint(equalTo: emailButton.leftAnchor, constant: -30).isActive = true
+        facebookButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        facebookButton.widthAnchor.constraint(equalToConstant: 60).isActive = true
+        
+        youtubeButton.centerXAnchor.constraint(equalTo: emailButton.centerXAnchor).isActive = true
+        youtubeButton.topAnchor.constraint(equalTo: emailButton.bottomAnchor, constant: 30).isActive = true
+        youtubeButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        youtubeButton.widthAnchor.constraint(equalToConstant: 60).isActive = true
+        
+        
     }
     
     override func viewDidLoad() {
@@ -95,6 +173,11 @@ class AboutVC: UIViewController {
         view.addSubview(glassView)
         view.addSubview(titleLabel)
         view.addSubview(developerLabel)
+        view.addSubview(emailButton)
+        view.addSubview(facebookButton)
+        view.addSubview(twitterButton)
+        view.addSubview(rateButton)
+        view.addSubview(youtubeButton)
         setupNavBar()
         setupView()
         // Do any additional setup after loading the view.
