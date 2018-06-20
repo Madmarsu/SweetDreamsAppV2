@@ -626,11 +626,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4NGAZXKWW;
 				INFOPLIST_FILE = "Sweet Dreams App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "uladzislau.daratsiuk.Sweet-Dreams-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "Uladzislau-Daratsiuk.Sweet-Dreams";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -644,11 +645,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4NGAZXKWW;
 				INFOPLIST_FILE = "Sweet Dreams App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "uladzislau.daratsiuk.Sweet-Dreams-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "Uladzislau-Daratsiuk.Sweet-Dreams";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

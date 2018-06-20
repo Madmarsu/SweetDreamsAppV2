@@ -103,6 +103,20 @@ class AboutVC: UIViewController {
         return button
     }()
     
+    lazy var copyRightLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .center
+        label.textColor = UIColor.white.withAlphaComponent(1)
+        label.font = UIFont(name: "SavoyeLetPlain", size: 20)
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.5
+        label.layer.cornerRadius = 2
+        label.clipsToBounds = true
+        label.text = "All sounds recorded by our Team."
+        return label
+    }()
+    
     
     fileprivate func setupNavBar(){
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named:"back"), style: .plain, target: self, action: #selector(handleBack))
@@ -164,7 +178,10 @@ class AboutVC: UIViewController {
         youtubeButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
         youtubeButton.widthAnchor.constraint(equalToConstant: 60).isActive = true
         
-        
+        copyRightLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        copyRightLabel.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        copyRightLabel.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        copyRightLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
     }
     
     override func viewDidLoad() {
@@ -178,6 +195,7 @@ class AboutVC: UIViewController {
         view.addSubview(twitterButton)
         view.addSubview(rateButton)
         view.addSubview(youtubeButton)
+        view.addSubview(copyRightLabel)
         setupNavBar()
         setupView()
         // Do any additional setup after loading the view.

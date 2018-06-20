@@ -32,7 +32,7 @@ extension MainVC {
     }
     
     @objc public func handleShare(){
-        let activityVC = UIActivityViewController(activityItems: ["Take a look on this amazing App. called Sweet Dreams"], applicationActivities: nil)
+        let activityVC = UIActivityViewController(activityItems: ["Take a look on this amazing App. called Sweet Dreams https://itunes.apple.com/US/app/id1335387271?mt=8"], applicationActivities: nil)
         activityVC.popoverPresentationController?.sourceView = self.view
         self.present(activityVC, animated: true, completion: nil)
     }
