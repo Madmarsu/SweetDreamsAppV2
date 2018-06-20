@@ -1,15 +1,15 @@
 //
-//  MelodieCollectionExt.swift
+//  BabyCollectionExt.swift
 //  Sweet Dreams App
 //
-//  Created by Uladzislau Daratsiuk on 6/14/18.
+//  Created by Uladzislau Daratsiuk on 6/20/18.
 //  Copyright © 2018 Uladzislau Daratsiuk. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension BabyVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == melodieCollectionView {
@@ -60,9 +60,9 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         if collectionView == melodieCollectionView {
-        return UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 10)
+            return UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 10)
         }else{
-         return UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 10)
+            return UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 10)
         }
     }
     

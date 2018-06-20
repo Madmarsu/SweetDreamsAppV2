@@ -11,7 +11,6 @@ import UIKit
 import AVFoundation
 
 extension MainVC {
-    
     @objc public func handleMenu(){
         if (menuShowing){
             UIView.animate(withDuration: 0.3) {
@@ -61,9 +60,7 @@ extension MainVC {
         let item7 = Melodie(name: "Winter", icon: "winter", background: "background10", melodie: "winter", desc: "Relaxing sounds of the real Snowstorm")
         let item8 = Melodie(name: "Fireplace", icon: "fireplace", background: "background8", melodie: "fireplace", desc: "Real fireplace with wood burning, producing soothing crackling sounds that help you relax")
         let item9 = Melodie(name: "City", icon: "city", background: "background7", melodie: "city", desc: "Amazing sound of New York City in the Morning")
-        let item10 = Melodie(name: "Cleaner", icon: "cleaner", background: "background6", melodie: "cleaner", desc: "Sound to relax Baby To Go To Sleep Soothing Vacuum Cleaner")
-        let item11 = Melodie(name: "Dryer", icon: "dryer", background: "background6", melodie: "dryer", desc: "Hair Dryer White Noise for your Baby")
-        let item12 = Melodie(name: "Whales", icon: "whales", background: "background6", melodie: "whales", desc: "Whale Sound deep Underwater with Ocean Sound")
+        let item10 = Melodie(name: "Whales", icon: "whales", background: "background6", melodie: "whales", desc: "Whale Sound deep Underwater with Ocean Sound")
         
         array.append(item1)
         array.append(item2)
@@ -75,8 +72,6 @@ extension MainVC {
         array.append(item8)
         array.append(item9)
         array.append(item10)
-        array.append(item11)
-        array.append(item12)
         
         return array
     }

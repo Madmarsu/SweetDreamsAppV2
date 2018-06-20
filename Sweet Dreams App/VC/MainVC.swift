@@ -202,10 +202,7 @@ class MainVC: UIViewController {
         label.isHidden = true
         return label
     }()
-    
-    
-    
-    
+
     fileprivate func setupNavBar(){
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named:"menu"), style: .plain, target: self, action: #selector(handleMenu))
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named:"share"), style: .plain, target: self, action: #selector(handleShare))
