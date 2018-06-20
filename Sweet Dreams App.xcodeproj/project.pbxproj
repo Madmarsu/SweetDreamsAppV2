@@ -15,6 +15,8 @@
 		C01BFDFA20D3E4C000A282D6 /* AboutHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01BFDF920D3E4C000A282D6 /* AboutHandlers.swift */; };
 		C01BFDFC20D3F40000A282D6 /* whales.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C01BFDFB20D3F40000A282D6 /* whales.mp3 */; };
 		C025BC4820DA3429004BF51A /* BabyCollectionExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C025BC4720DA3429004BF51A /* BabyCollectionExt.swift */; };
+		C025BC4B20DA4532004BF51A /* fan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C025BC4920DA4531004BF51A /* fan.mp3 */; };
+		C025BC4C20DA4532004BF51A /* plain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C025BC4A20DA4531004BF51A /* plain.mp3 */; };
 		C0C694F020D2594800FED852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C694EF20D2594800FED852 /* AppDelegate.swift */; };
 		C0C694F520D2594800FED852 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C694F320D2594800FED852 /* Main.storyboard */; };
 		C0C694F820D2594800FED852 /* Sweet_Dreams_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0C694F620D2594800FED852 /* Sweet_Dreams_App.xcdatamodeld */; };
@@ -71,6 +73,8 @@
 		C01BFDF920D3E4C000A282D6 /* AboutHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutHandlers.swift; sourceTree = "<group>"; };
 		C01BFDFB20D3F40000A282D6 /* whales.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whales.mp3; sourceTree = "<group>"; };
 		C025BC4720DA3429004BF51A /* BabyCollectionExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyCollectionExt.swift; sourceTree = "<group>"; };
+		C025BC4920DA4531004BF51A /* fan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fan.mp3; sourceTree = "<group>"; };
+		C025BC4A20DA4531004BF51A /* plain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = plain.mp3; sourceTree = "<group>"; };
 		C0C694EC20D2594800FED852 /* Sweet Dreams App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sweet Dreams App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C694EF20D2594800FED852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0C694F420D2594800FED852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -249,6 +253,8 @@
 				C0C6953D20D2899500FED852 /* fireplace.mp3 */,
 				C0C6953F20D2899800FED852 /* forest.mp3 */,
 				C0C6953920D2899000FED852 /* rain.mp3 */,
+				C025BC4920DA4531004BF51A /* fan.mp3 */,
+				C025BC4A20DA4531004BF51A /* plain.mp3 */,
 				C0C6954020D2899A00FED852 /* river.mp3 */,
 				C0C6953C20D2899400FED852 /* sea.mp3 */,
 				C0C6953B20D2899200FED852 /* start.mp3 */,
@@ -369,10 +375,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C025BC4B20DA4532004BF51A /* fan.mp3 in Resources */,
 				C0C694FD20D2594B00FED852 /* LaunchScreen.storyboard in Resources */,
 				C0C6954520D2899B00FED852 /* train.mp3 in Resources */,
 				C0E6949F20D2AB7B00B7E0BE /* desert.mp3 in Resources */,
 				C0C6954820D2899B00FED852 /* fireplace.mp3 in Resources */,
+				C025BC4C20DA4532004BF51A /* plain.mp3 in Resources */,
 				C0C6954C20D2899B00FED852 /* winter.mp3 in Resources */,
 				C0C6954B20D2899B00FED852 /* river.mp3 in Resources */,
 				C0C694FA20D2594B00FED852 /* Assets.xcassets in Resources */,
